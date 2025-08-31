@@ -1,7 +1,5 @@
 # ColorPickerDemo
 
-## Example of how to include png/mp4 links in md file for GitHub
-
 A SwiftUI demo showing how to use ColorPicker and persist the chosen color in UserDefaults using AppStorage.
 
 ## Features
@@ -19,6 +17,7 @@ A SwiftUI demo showing how to use ColorPicker and persist the chosen color in Us
     3. Add ColorPickerView.swift to your project.
     4. Run the app on the simulator or device.
 
+
 ## Storing Color in UserDefaults
 
 Since UserDefaults only supports basic types (Int, String, etc.), we convert the selected color into a hex string before saving.
@@ -27,6 +26,7 @@ Since UserDefaults only supports basic types (Int, String, etc.), we convert the
     • The stored string is restored back to a Color on app launch.
 
 This is handled with the included Color extension.
+
 
 ## Screenshots
 
@@ -49,10 +49,10 @@ Try out the Color Picker feature inside the MyChronoPro stopwatch app:
 
 ## Example Code
 
-            // supportsOpacity is optional, defaults to true
-            ColorPicker("Select a Color", selection: $selectedColor, supportsOpacity: true)
-            
-            // Use onChange to react to changes in the color picker
-            .onChange(of: selectedColor) { _, newColor in
-                colorHex = newColor.hexString
-            }
+    // supportsOpacity is optional, defaults to true
+    ColorPicker("Select a Color", selection: $selectedColor, supportsOpacity: true)
+    
+    // Use onChange to react to changes in the color picker
+    .onChange(of: selectedColor) { _, newColor in
+        colorHex = newColor.hexString
+    }
