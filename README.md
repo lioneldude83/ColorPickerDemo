@@ -4,18 +4,18 @@ A SwiftUI demo showing how to use ColorPicker and persist the chosen color in Us
 
 ## Features
 
-    • SwiftUI ColorPicker integrated into a simple demo view.
-    • Selected color is stored as a hex string in AppStorage.
-    • Colors persist across app launches.
-    • Conversion between Color ↔ Hex String with a helper extension.
-    • Option to disable opacity if you only want solid colors.
+* SwiftUI ColorPicker integrated into a simple demo view.
+* Selected color is stored as a hex string in AppStorage.
+* Colors persist across app launches.
+* Conversion between Color ↔ Hex String with a helper extension.
+* Option to disable opacity if you only want solid colors.
 
 ## Setup
 
-    1. Download ColorPickerView.swift from this repo.
-    2. Create a new SwiftUI project in Xcode.
-    3. Add ColorPickerView.swift to your project.
-    4. Run the app on the simulator or device.
+1. Download ColorPickerView.swift from this repo.
+2. Create a new SwiftUI project in Xcode.
+3. Add ColorPickerView.swift to your project.
+4. Run the app on the simulator or device.
 
 
 ## Storing Color in UserDefaults
