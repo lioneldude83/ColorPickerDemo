@@ -1,5 +1,7 @@
 # ColorPickerDemo
 
+## Example of how to include png/mp4 links in md file for GitHub
+
 A SwiftUI demo showing how to use ColorPicker and persist the chosen color in UserDefaults using AppStorage.
 
 ## Features
@@ -31,17 +33,25 @@ This is handled with the included Color extension.
 |------|--------------|
 | ![Selected color](Screenshots/ColorPickerView1.png) | ![Color picker grid](Screenshots/SelectAColor-WithOpacitySlider.png) |
 
+
 ## Screen Recording
 
 [🎥 Watch the screen recording](Screenshots/ColorPickerScreenRecording.mp4)
 
 
+## MyChronoPro Lap Tracker  
+
+Try out the Color Picker feature inside the MyChronoPro stopwatch app:
+
+👉 [See the Color Picker in action on the App Store](https://apps.apple.com/app/mychronopro-lap-tracker/id6746975883)
+
+
 ## Example Code
 
-        ColorPicker("Select a Color", selection: $selectedColor, supportsOpacity: true)
-            .padding()
-            .frame(maxWidth: .infinity)
-        
-        Text("Selected Color: \(colorHex)")
-            .font(.headline)
-            .foregroundStyle(selectedColor)
+            // supportsOpacity is optional, defaults to true
+            ColorPicker("Select a Color", selection: $selectedColor, supportsOpacity: true)
+            
+            // Use onChange to react to changes in the color picker
+            .onChange(of: selectedColor) { _, newColor in
+                colorHex = newColor.hexString
+            }
