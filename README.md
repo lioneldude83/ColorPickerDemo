@@ -29,7 +29,12 @@ This is handled with the included Color extension.
 
 | Demo | Color Picker |
 |------|--------------|
-| ![Selected color](Screenshots/ColorPickerView1.jpeg) | ![Color picker grid](Screenshots/SelectAColor-WithOpacitySlider.jpeg) |
+| ![Selected color](Screenshots/ColorPickerView1.png) | ![Color picker grid](Screenshots/SelectAColor-WithOpacitySlider.png) |
+
+## Screen Recording
+
+[🎥 Watch the screen recording](Screenshots/ColorPickerScreenRecording.mp4)
+
 
 ## Example Code
 
