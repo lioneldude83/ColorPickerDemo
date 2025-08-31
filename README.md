@@ -22,6 +22,7 @@ A SwiftUI demo showing how to use ColorPicker and persist the chosen color in Us
 ## Storing Color in UserDefaults
 
 Since UserDefaults only supports basic types (Int, String, etc.), we convert the selected color into a hex string before saving.
+
     • Example: #FF0000FF → Red with full opacity.
     • The stored string is restored back to a Color on app launch.
 
